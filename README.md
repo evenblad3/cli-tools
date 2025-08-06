@@ -2,6 +2,6 @@
 Random command line tools that I made.
 
 ## TODO
-- [ ] EXIF Remover
+- [x] EXIF Remover
 - [ ] Password Generator
 - [ ] Encryptor
