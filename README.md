@@ -1,5 +1,10 @@
 # cli-tools
-Random command line tools that I made.
+Command line tools made for practice, which still work as intended.
+
+## Folders
+* **[Privacy](privacy/)**
+* **[Security](security/)**
+* **[System](security/)**
 
 ## TODO
 - [ ] Argparse Support

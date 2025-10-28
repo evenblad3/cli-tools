@@ -1,9 +1,9 @@
 #include <windows.h>
-#include <iostream>
+//#include <iostream>
 
 bool clipboard() {
     if (!OpenClipboard(NULL)) {
-        std::cerr << "Failed to open clipboard!\n";
+        //std::cerr << "Failed to open clipboard!\n";
         return false;
     }
 
@@ -14,10 +14,10 @@ bool clipboard() {
     } cd;
 
     if (!EmptyClipboard()) {
-        std::cerr << "Failed to empty clipboard!\n";
+        //std::cerr << "Failed to empty clipboard!\n";
         return false;
     } else {
-        std::cout << "Clipboard contents cleared!\n";
+        //std::cout << "Clipboard contents cleared!\n";
         return true;
     }
 
@@ -25,6 +25,10 @@ bool clipboard() {
 }
 
 int main() {
-    clipboard();
+    const int second = 1000;
+    while (1) {
+        clipboard();
+        Sleep(second * 20);
+    }
     return 0;
 }
